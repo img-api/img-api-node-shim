@@ -17,27 +17,36 @@ const ImgAPI = require('./lib/img-api.js');
 
 var imgapi = new ImgAPI();
 
+
 // Check if you can connect to the hello world API
 // It should return a json file
 //
 // https://img-api.com/api/hello_world/
 
-hello = imgapi.hello_world()
+let main = async () => {
+    console.log("\n------------------------------")
+    console.log("API CHECK - HELLO WORLD")
 
-hello.then(json => {
-    // Should return the hello world
-    console.log(json)
-}).catch(e => {
-    // Check if there is an error on the API
-    console.log(e)
-})
+    let hello = await imgapi.hello_world()
+    console.log(hello)
 
-// We wait for our previous call to finish and we start a new call
+    console.log("\n------------------------------")
+    console.log("CREATE USER")
 
-create_user = imgapi.create_user("testing", "password123", "test@engineer.blue")
-create_user.then(json => {
-    console.log(json)
-}).catch(e => {
-    console.log("! FAILED CREATING USER " + e)
-})
+    let user = await imgapi.create_user("testing", "password123", "test@engineer.blue")
+    console.log(user)
 
+    console.log("\n------------------------------")
+    console.log("USER TOKEN ")
+
+    let token = user.token
+
+    console.log("\n------------------------------")
+    console.log("IMAGE UPLOAD ")
+
+    let upload = await imgapi.upload_image(token, "test/rock.jpg")
+    console.log(upload)
+
+}
+
+main()

@@ -1,15 +1,17 @@
-# IMG-API
+# IMG-API.COM
 
 ## Introduction
 
-Main IMG-API repository
-[IMG-API.COM](https://github.com/sergioamr/img-api)
+[IMG-API.COM](https://img-api.com)
+
+[SOURCE CODE](https://github.com/sergioamr/img-api)
 
 ```
 https://github.com/sergioamr/img-api
 ```
 
 This shim, small library.
+
 [NODE LIBRARY](https://github.com/sergioamr/img-api-node-shim)
 
 ```
