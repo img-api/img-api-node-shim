@@ -3,11 +3,15 @@
 ## Introduction
 
 Main IMG-API repository
+[IMG-API.COM](https://github.com/sergioamr/img-api)
+
 ```
 https://github.com/sergioamr/img-api
 ```
 
 This shim, small library.
+[NODE LIBRARY](https://github.com/sergioamr/img-api-node-shim)
+
 ```
 https://github.com/sergioamr/img-api-node-shim
 ```
