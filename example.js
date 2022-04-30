@@ -47,6 +47,14 @@ let main = async () => {
     let upload = await imgapi.upload_image(token, "test/rock.jpg")
     console.log(upload)
 
+    console.log("\n------------------------------")
+    console.log("IMAGE DOWNLOAD ")
+
+    media = upload.media[0]
+    console.log(media)
+
+    let download = await imgapi.download_image(token, media.media_id, "GIF", "output.gif")
+    console.log(download)
 }
 
 main()

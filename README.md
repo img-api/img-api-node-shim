@@ -42,11 +42,9 @@ node example.js
 ```
 
 ## Dependences
-No dependences.
 
+We need to make forms and requests
 ```
-YOU> WHAT??? SERGIO, ARE YOU MAD?
-YOU> We MUST download 1TB of NODE MODULES to RUN ANYTHING!
-
-ME> Sorry ¯\_(ツ)_/¯
+request
+form-data
 ```
